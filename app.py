@@ -5,7 +5,10 @@ def get_soup(url):
     """
     take a response from a site and build BeautifulSoup object
     """
-    pass
+    resp = r.get(url)
+    soup = BeautifulSoup(resp.content, 'html.parser')
+    return soup
+
 
 def get_fx_to_usd(currency):
     """
@@ -17,4 +20,7 @@ def get_price_information(ticker, exchange):
     """
     the main block to get a dictionary of values
     """
+    pass
+
+if __name__ == "__main__":
     pass
